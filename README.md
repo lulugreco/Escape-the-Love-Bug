@@ -17,3 +17,6 @@
     - WIN : This is one of the final states of the game. You enter this state if you make it to the end of the maze without collisions. You can reenter the START state to replay the game by pressing the start button.
 
     - LOSE : This is one of the final states of the game. You enter this state if you collide with the walls or enemy. You can reenter the START state to replay the game by pressing the start button.
+
+# HOW TO WIN OR LOSE GAME
+    The game is won by moving your player through the maze whilst evading the "love bug" and the walls. If you make it to the end of the maze without colliding with either, you win! If the "love bug" catches you or you direct the player into a wall, you lose. 
