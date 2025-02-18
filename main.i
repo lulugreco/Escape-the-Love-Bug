@@ -1284,13 +1284,9 @@ void goToLose();
 void lose();
 
 
-char scoreBuffer[41];
-
 
 unsigned short buttons;
 unsigned short oldButtons;
-
-
 
 
 
@@ -1421,6 +1417,7 @@ void pause() {
 }
 
 
+
 void goToWin() {
     playAnalogSound(17);
     playAnalogSound(16);
@@ -1446,6 +1443,7 @@ void win() {
         goToStart();
     }
 }
+
 
 
 void goToLose() {
@@ -1492,6 +1490,7 @@ void drawGame() {
         }
     }
 }
+
 void initGame() {
     initSound();
     initPlayer();

@@ -119,8 +119,8 @@ void initPlayer() {
 void drawPlayer() {
 
     drawRectangle(player.oldx, player.oldy, 20, 13, (((31) & 31) | ((20) & 31) << 5 | ((31) & 31) << 10));
-
     drawRectangle(player.oldx, player.oldy - 7, 20, 15, (((31) & 31) | ((20) & 31) << 5 | ((31) & 31) << 10));
+
 
     drawRectangle(player.x + 6, player.y - 7, 8, 1, player.color);
     drawRectangle(player.x + 4, player.y - 6, 12, 1, player.color);
@@ -144,6 +144,7 @@ void drawPlayer() {
 
 
 }
+
 
 void updatePlayer() {
 
@@ -175,8 +176,6 @@ void updatePlayer() {
 }
 
 
-
-
 void initWall() {
     for (int i = 0; i < 5; i++) {
         if (i == 0) {
@@ -206,8 +205,8 @@ void drawWall() {
 
 }
 
-ENEMY enemy;
 
+ENEMY enemy;
 void initEnemy() {
 
     enemy.x = 10;
@@ -222,6 +221,7 @@ void initEnemy() {
 }
 
 void drawEnemy() {
+
     drawRectangle(enemy.oldx, enemy.oldy, 20, 13, (((31) & 31) | ((20) & 31) << 5 | ((31) & 31) << 10));
     drawRectangle(enemy.oldx, enemy.oldy - 7, 20, 15, (((31) & 31) | ((20) & 31) << 5 | ((31) & 31) << 10));
 
@@ -247,6 +247,7 @@ void drawEnemy() {
     drawRectangle(enemy.x + 8, enemy.y + 6, 3, 1, (((0) & 31) | ((0) & 31) << 5 | ((0) & 31) << 10));
 
 }
+
 
 void updateEnemy() {
     enemy.oldx = enemy.x;

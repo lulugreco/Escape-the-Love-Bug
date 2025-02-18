@@ -831,7 +831,6 @@ main:
 	.comm	state,4,4
 	.comm	oldButtons,2,2
 	.comm	buttons,2,2
-	.comm	scoreBuffer,41,4
 	.comm	NOTES,2,2
 	.comm	walls,140,4
 	.section	.rodata
